@@ -4,7 +4,7 @@ Paging Actions adds dial codes that page a set of phones. An action is either a 
 
 Each action is created in the FusionPBX GUI: pick a start code, tick the extensions, choose a recording from the Recordings app, save. The app writes the dialplans for you and a small Lua engine does the work on FreeSWITCH.
 
-It was written to replace hand-maintained per-tenant dialplans and scripts for an emergency lockdown message, so the design goal throughout is that it works every time and can always be stopped.
+It was written to replace hand-maintained per-tenant dialplans and scripts for an emergency lockdown message and paging groups, so the design goal throughout is that it works every time and can always be stopped.
 
 ## Status
 
