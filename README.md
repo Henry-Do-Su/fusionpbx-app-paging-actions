@@ -6,11 +6,6 @@ Each action is created in the FusionPBX GUI: pick a start code, tick the extensi
 
 It was written to replace hand-maintained per-tenant dialplans and scripts for an emergency lockdown message and paging groups, so the design goal throughout is that it works every time and can always be stopped.
 
-## Status
-
-Version 1.0.0. The GUI has been exercised end to end in a browser on FusionPBX 5.6.8 and on master (5.7.0), both with PostgreSQL: install, create, edit, validation, copy, toggle, delete, start, stop, tenant permissions and dialplan regeneration on upgrade. The Lua side has a test suite of 273 checks that runs the engine and the dialplan entry point against a simulated FreeSWITCH, covering start, native looping, cancel, PINs, lock contention, crash recovery, re-calling and teardown. The FreeSWITCH behaviour the engine relies on was confirmed by reading the mod_conference, mod_hash and mod_commands sources (1.10.0 and current master).
-
-**It has not yet been run against a live FreeSWITCH with real phones.** Install it on a test PBX and work through the checklist near the end of this file before you rely on it in an emergency.
 
 ## Requirements
 
